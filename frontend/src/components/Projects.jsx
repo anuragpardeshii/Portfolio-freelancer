@@ -1,27 +1,27 @@
 import React from "react";
 import Bagiya from '/src/assets/Images/Bagiya.png'
 import Clozt from '/src/assets/Images/clozt.png'
-import Agentic from '/src/assets/Images/Bagiya.png'
+import Agentic from '/src/assets/Images/agentic.png'
 const cardData = [
   {
     title: "Builtfast.ai",
     description: "Full-stack web application for medical professionals",
     link: "https://agentic-workflow.vercel.app/",
-    image: {Agentic},
+    image: Agentic,
     tags: ["Stackblitz", "Groq", "Netlify"],
   },
   {
     title: "Clozt",
     description: "Full-stack web application for medical professionals",
     link: "https://clozt.vercel.app/",
-    image: {Clozt},
+    image: Clozt,
     tags: ["React", "Node.js", "MongoDB"],
   },
   {
-    title: "Healthcare Platform",
-    description: "Full-stack web application for medical professionals",
+    title: "Bagiya",
+    description: "Full-stack web application ti focus",
     link: "",
-    image: {Bagiya},
+    image: Bagiya,
     tags: ["React", "Node.js", "MongoDB"],
   },
 ];
