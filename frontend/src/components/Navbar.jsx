@@ -116,8 +116,7 @@ export default function Navbar() {
                         ?.scrollIntoView({ behavior: "smooth" });
                       setActiveSection(item.id); // Update state on click
                     }}
-                    className={`block py-2 px-3 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:p-0 
-              dark:hover:bg-gray-700 dark:border-gray-700 
+                    className={`block py-2 px-3 rounded-sm md:p-0  
               ${
                 activeSection === item.id
                   ? "text-purple-500 font-bold" // Active link styling

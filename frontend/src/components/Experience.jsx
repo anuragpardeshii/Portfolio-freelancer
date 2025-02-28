@@ -20,7 +20,7 @@ export default function Experience() {
               <div className="space-y-12">
                 <div className="relative pl-8 md:pl-0 animate__animated animate__fadeInLeft">
                   <div className="md:grid md:grid-cols-2 items-center md:gap-12">
-                    <div className="md:text-right md:pr-12">
+                    <div className="md:text-right sm:ms-4 md:pr-12">
                       <h3 className="text-xl font-bold text-white mb-2">
                         Chief of Staff
                       </h3>
@@ -29,7 +29,7 @@ export default function Experience() {
                       </p>
                       <p className="text-gray-400"> Feb 2025 - Present</p>
                     </div>
-                    <div className="bg-[#121212] p-6 ms-4 shadow-2xl rounded-lg mt-4 md:mt-0">
+                    <div className="bg-[#121212] p-6 sm:ms-4 shadow-2xl rounded-lg mt-4 md:mt-0">
                       <ul className="text-white space-y-2">
                         <li>
                           • Overseeing multiple development projects, ensuring
@@ -76,7 +76,7 @@ export default function Experience() {
 
                 <div className="relative pl-8 md:pl-0 animate__animated animate__fadeInLeft">
                   <div className="md:grid md:grid-cols-2 items-center md:gap-12">
-                    <div className="md:text-right md:pr-12">
+                    <div className="md:text-right sm:ms-4 md:pr-12">
                       <h3 className="text-xl font-bold text-white mb-2">
                         MERN Stack Developer Intern
                       </h3>
@@ -85,7 +85,7 @@ export default function Experience() {
                       </p>
                       <p className="text-gray-400">July 2024 - Jan 2025</p>
                     </div>
-                    <div className="bg-[#121212] ms-4 p-6 shadow-2xl rounded-lg mt-4 md:mt-0">
+                    <div className="bg-[#121212] sm:ms-4 p-6 shadow-2xl rounded-lg mt-4 md:mt-0">
                       <ul className="text-white space-y-2">
                         <li>
                           • Developed and maintained features for
