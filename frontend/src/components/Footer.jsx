@@ -107,7 +107,7 @@ export default function Footer() {
             <div>
               <h4 className="text-lg font-semibold mb-4">Contact Info</h4>
               <ul className="space-y-2">
-                <li className="flex items-center gap-2 text-neutral-400">
+              <li className="flex items-center gap-2 text-neutral-400 overflow-hidden truncate sm:w-auto">
                   <svg
                     className="w-6 h-6 text-gray-800 dark:text-white"
                     aria-hidden="true"

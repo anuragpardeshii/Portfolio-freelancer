@@ -52,7 +52,7 @@ export default function Navbar() {
           </a>
           <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
             <button
-              className="p-[3px] relative"
+              className="p-[3px] hidden md:block relative"
               onClick={() => {
                 const link = document.createElement("a");
                 link.href = {Resume}; // Replace with the correct file path
@@ -97,11 +97,11 @@ export default function Navbar() {
             className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
             id="navbar-sticky"
           >
-            <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-black dark:border-gray-700">
+            <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-[#121212] md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-[#121212] md:dark:bg-black dark:border-gray-700">
               {[
                 { id: "home", label: "Home" },
                 { id: "about", label: "About" },
-                { id: "experience", label: "Services" },
+                { id: "experience", label: "Experience" },
                 { id: "skills", label: "Skills" },
                 { id: "projects", label: "Projects" },
                 { id: "contact", label: "Contact" },

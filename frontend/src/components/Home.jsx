@@ -19,7 +19,7 @@ export default function Hero() {
             <div className="space-x-4">
               <a
                 href="#contact"
-                className="bg-gradient-to-r from-indigo-500 to-purple-500 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-lg inline-block transition duration-300 transform hover:scale-105"
+                className="bg-gradient-to-r mb-4 from-indigo-500 to-purple-500 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-lg inline-block transition duration-300 transform hover:scale-105"
               >
                 Hire me
               </a>
