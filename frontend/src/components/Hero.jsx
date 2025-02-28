@@ -3,7 +3,7 @@ import React from "react";
 export default function Hero() {
   return (
     <>
-      <section id="hero" className="bg-black min-h-[100vh] pt-16">
+      <section id="hero" className="bg-black min-h-[100vh]">
         <div className="max-w-7xl flex-wrap mx-auto px-2 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-around py-30">
           <div className="lg:w-1/2 lg:text-left md:max-w-4xl text-center md:text-center animate__animated animate__fadeInLeft">
             <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
