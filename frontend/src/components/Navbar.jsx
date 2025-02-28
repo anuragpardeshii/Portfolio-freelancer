@@ -1,12 +1,44 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import Resume from "/src/assets/files/Anurag-Pardeshi-Resume.pdf";
 
 export default function Navbar() {
+  const [activeSection, setActiveSection] = useState("");
+
+  useEffect(() => {
+    const sections = [
+      "home",
+      "about",
+      "experience",
+      "skills",
+      "projects",
+      "contact",
+    ];
+
+    const handleScroll = () => {
+      let currentSection = "";
+
+      for (const section of sections) {
+        const element = document.getElementById(section);
+        if (element) {
+          const rect = element.getBoundingClientRect();
+          if (rect.top <= 150 && rect.bottom >= 150) {
+            currentSection = section;
+            break;
+          }
+        }
+      }
+      setActiveSection(currentSection);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
   return (
     <>
       <nav className="bg-white dark:bg-black fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-800">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
           <a
-            href="https://flowbite.com/"
+            href="/"
             className="flex items-center space-x-3 rtl:space-x-reverse"
           >
             {/* <img
@@ -19,12 +51,23 @@ export default function Navbar() {
             </span>
           </a>
           <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-            <button className="p-[3px] relative">
+            <button
+              className="p-[3px] relative"
+              onClick={() => {
+                const link = document.createElement("a");
+                link.href = {Resume}; // Replace with the correct file path
+                link.download = "Anurag-Pardeshi-Resume.pdf"; // Set the downloaded file name
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+              }}
+            >
               <div className="absolute inset-0 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-lg" />
-              <div className="px-8 py-2  bg-black rounded-[6px]  relative group transition duration-200 text-white hover:bg-transparent">
+              <div className="px-8 py-2 bg-black rounded-[6px] relative group transition duration-200 text-white hover:bg-transparent">
                 Download Resume
               </div>
             </button>
+
             <button
               data-collapse-toggle="navbar-sticky"
               type="button"
@@ -55,39 +98,36 @@ export default function Navbar() {
             id="navbar-sticky"
           >
             <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-black dark:border-gray-700">
-              <li>
-                <a
-                  href="#"
-                  className="block py-2 px-3 text-white bg-purple-500 rounded-sm md:bg-transparent md:text-purple-500 md:p-0 md:dark:text-purple-500"
-                  aria-current="page"
-                >
-                  Home
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-purple-500 md:p-0 md:dark:hover:text-purple-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
-                >
-                  About
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-purple-500 md:p-0 md:dark:hover:text-purple-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
-                >
-                  Services
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-purple-500 md:p-0 md:dark:hover:text-purple-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
-                >
-                  Contact
-                </a>
-              </li>
+              {[
+                { id: "home", label: "Home" },
+                { id: "about", label: "About" },
+                { id: "experience", label: "Services" },
+                { id: "skills", label: "Skills" },
+                { id: "projects", label: "Projects" },
+                { id: "contact", label: "Contact" },
+              ].map((item) => (
+                <li key={item.id}>
+                  <a
+                    href={`#${item.id}`}
+                    onClick={(e) => {
+                      e.preventDefault();
+                      document
+                        .getElementById(item.id)
+                        ?.scrollIntoView({ behavior: "smooth" });
+                      setActiveSection(item.id); // Update state on click
+                    }}
+                    className={`block py-2 px-3 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:p-0 
+              dark:hover:bg-gray-700 dark:border-gray-700 
+              ${
+                activeSection === item.id
+                  ? "text-purple-500 font-bold" // Active link styling
+                  : "text-gray-900 dark:text-white md:hover:text-purple-500"
+              }`}
+                  >
+                    {item.label}
+                  </a>
+                </li>
+              ))}
             </ul>
           </div>
         </div>

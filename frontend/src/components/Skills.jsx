@@ -65,11 +65,11 @@ const data = [
 export default function Skills() {
   return (
     <>
-      <section id="experience" class="py-20 bg-[#121212]">
-        <div class="container mx-auto px-6">
-          <div class="text-center mb-16 animate__animated animate__fadeInUp">
-            <h2 class="text-3xl font-bold text-white mb-4">Technical Skills</h2>
-            <p class="text-gray-400 mb-12 max-w-2xl mx-auto">
+      <section id="skills" className="py-20 bg-[#121212]">
+        <div className="container mx-auto px-6">
+          <div className="text-center mb-16 animate__animated animate__fadeInUp">
+            <h2 className="text-3xl font-bold text-white mb-4">Technical Skills</h2>
+            <p className="text-gray-400 mb-12 max-w-2xl mx-auto">
               A track record of delivering innovative solutions across various
               industries
             </p>
