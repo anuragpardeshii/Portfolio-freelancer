@@ -22,22 +22,21 @@ export default function Experience() {
                   <div className="md:grid md:grid-cols-2 items-center md:gap-12">
                     <div className="md:text-right sm:ms-4 md:pr-12">
                       <h3 className="text-xl font-bold text-white mb-2">
-                        Chief of Staff
+                        MERN Stack Developer Intern
                       </h3>
-                      <p className="text-purple-500 mb-1">
-                        The Entrepreneurship Network
-                      </p>
-                      <p className="text-gray-400"> Feb 2025 - Present</p>
+                      <p className="text-purple-500 mb-1">Accura Tequipment</p>
+                      <p className="text-gray-400"> June 2025 - Sept 2025</p>
                     </div>
                     <div className="bg-[#121212] p-6 sm:ms-4 shadow-2xl rounded-lg mt-4 md:mt-0">
                       <ul className="text-white space-y-2">
                         <li>
-                          • Overseeing multiple development projects, ensuring
-                          timely and high-quality delivery
+                          • Contributed to the development of Exam Management
+                          System (EMS) and Course Management System using
+                          Next.js, TypeScript, and MERN stack.
                         </li>
                         <li>
-                          • Managing cross-functional teams, streamlining
-                          collaboration between developers and stakeholders
+                          • Improved exam scheduling and seating plan
+                          generation workflows, reducing manual effort by 35%.
                         </li>
                         <li>
                           • Defining technical strategies and optimizing
@@ -53,11 +52,23 @@ export default function Experience() {
                   </div>
                   {/* dot */}
                   <div className="absolute hidden md:block left-0 md:left-1/2 top-1/2 transform md:-translate-x-1/2 -translate-y-1/2 border-2 border-purple-500 rounded-lg p-2 bg-[#121212]">
-      
-<svg className="w-6 h-6 text-gray-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-  <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14.7141 15h4.268c.4043 0 .732-.3838.732-.8571V3.85714c0-.47338-.3277-.85714-.732-.85714H6.71411c-.55228 0-1 .44772-1 1v4m10.99999 7v-3h3v3h-3Zm-3 6H6.71411c-.55228 0-1-.4477-1-1 0-1.6569 1.34315-3 3-3h2.99999c1.6569 0 3 1.3431 3 3 0 .5523-.4477 1-1 1Zm-1-9.5c0 1.3807-1.1193 2.5-2.5 2.5s-2.49999-1.1193-2.49999-2.5S8.8334 9 10.2141 9s2.5 1.1193 2.5 2.5Z"/>
-</svg>
-
+                    <svg
+                      className="w-6 h-6 text-gray-300"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke="currentColor"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
+                        d="M14.7141 15h4.268c.4043 0 .732-.3838.732-.8571V3.85714c0-.47338-.3277-.85714-.732-.85714H6.71411c-.55228 0-1 .44772-1 1v4m10.99999 7v-3h3v3h-3Zm-3 6H6.71411c-.55228 0-1-.4477-1-1 0-1.6569 1.34315-3 3-3h2.99999c1.6569 0 3 1.3431 3 3 0 .5523-.4477 1-1 1Zm-1-9.5c0 1.3807-1.1193 2.5-2.5 2.5s-2.49999-1.1193-2.49999-2.5S8.8334 9 10.2141 9s2.5 1.1193 2.5 2.5Z"
+                      />
+                    </svg>
 
                     {/* <svg
                       className="w-6 h-6 text-gray-800 dark:text-white"
@@ -78,12 +89,12 @@ export default function Experience() {
                   <div className="md:grid md:grid-cols-2 items-center md:gap-12">
                     <div className="md:text-right sm:ms-4 md:pr-12">
                       <h3 className="text-xl font-bold text-white mb-2">
-                        MERN Stack Developer Intern
+                        Full Stack Developer Intern
                       </h3>
                       <p className="text-purple-500 mb-1">
                         The Entrepreneurship Network
                       </p>
-                      <p className="text-gray-400">July 2024 - Jan 2025</p>
+                      <p className="text-gray-400">Jan 2025 - June 2025</p>
                     </div>
                     <div className="bg-[#121212] sm:ms-4 p-6 shadow-2xl rounded-lg mt-4 md:mt-0">
                       <ul className="text-white space-y-2">
@@ -107,9 +118,21 @@ export default function Experience() {
                     </div>
                   </div>
                   <div className="absolute hidden md:block left-0 md:left-1/2 top-1/2 transform md:-translate-x-1/2 -translate-y-1/2 border-2 border-purple-500 rounded-lg p-2 bg-[#121212]">
-                  <svg className="w-6 h-6 text-gray-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-  <path stroke="currentColor" strokeWidth="2" d="M7 17v1a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1a3 3 0 0 0-3-3h-4a3 3 0 0 0-3 3Zm8-9a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/>
-</svg>
+                    <svg
+                      className="w-6 h-6 text-gray-300"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        d="M7 17v1a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1a3 3 0 0 0-3-3h-4a3 3 0 0 0-3 3Zm8-9a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+                      />
+                    </svg>
 
                     {/* <svg
                       className="w-6 h-6 text-gray-800 dark:text-white"
